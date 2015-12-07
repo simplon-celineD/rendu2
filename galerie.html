@@ -3,7 +3,7 @@
   <head lang="fr_FR">
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href="galerie.css" media="screen"/>
+    <link rel="stylesheet"  media="screen"/>
     <script type="text/javascript" src="scripts-base.js"></script>
 
     </script>
@@ -34,5 +34,96 @@ Souvent bon marché et à la mode dans la première moitié du xxe siècle, ce p
 Le nom de l'instrument provient d'une abréviation de piano-forte, nom de son ancêtre du xviiie siècle décrit précisément par son inventeur comme un « gravecembalo col piano e forte », un clavecin avec la possibilité de nuancer le son directement par la frappe des touches.</p></td>
         </tr>
     </table>
+    <style>
+    *{
+      margin:0;
+      padding:0;
+    }
+    //les margins et les paddings ne sont pas ajoutés aux tailles définies pour les divs
+    html {
+      box-sizing: border-box;
+    }
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+    body{
+      font-family: Geneva, Arial, sans-serif;
+      background-color: #FFECD3;
+    }
+    @media screen and (min-width:1024px){
+        body{
+            font-size:1em;
+        }
+    }
+    @media screen and (min-width:600px)and(max-width:1024px){
+      body{
+        font-size: 0.75em;
+      }
+    }
+    @media screen and (max-width:600px){
+        body{
+            font-size:0.50em;
+        }
+    }
+    /*40 vw veut dire image responsive à 40% de la taille de l'écran*/
+    img{
+      width: 40vw;
+    }
+    #tof{
+      margin-left:30%;
+      margin-top: 10%;
+    }
+    #description{
+      background-color: #0E0723;
+      height: 150px;
+      margin-top: 7%;
+      color: white;
+      text-align: center;
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+
+    h1{
+      padding-top: 20px;
+      animation-duration: 3s;
+      animation-name: slidein;
+      /*animation-iteration-count: infinite;*/
+      /*animation-direction: alternate;*/
+    }
+    @keyframes slidein{
+      from{
+        margin-left: 100%;
+        width: 300%;
+      }
+      to{
+        margin-left: 0%;
+        width: 100%;
+      }
+      /*50% {
+      font-size: 300%;
+      margin-left: 10%;
+      width: 150%;
+    }*/
+
+    }
+
+    p{
+      padding-top: 20px;
+    }
+
+    table{
+      margin-top: 10%;
+      margin-left: 15%;
+      margin-right: 10%;
+    }
+    .case{
+      padding-left: 40px;
+    }
+    td{
+      padding-bottom: 40px;
+      color: #828283;
+    }
+
+    </style>
   </body>
 </html>
